@@ -1,0 +1,18 @@
+"""
+Conta o número de vogais em uma matriz de caracteres.
+
+Parâmetros:
+- matriz: uma matriz de caracteres (letras minúsculas).
+
+Retorna:
+- A contagem de vogais na matriz.
+"""
+
+def conta_vogal(matriz):
+    vogais = 'aeiouAEIOU'
+    soma = 0
+    for linha in matriz:
+        for char in linha:
+            if char in vogais:
+                soma += 1
+    return soma
